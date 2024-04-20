@@ -1,0 +1,77 @@
+:root {
+    --backg: #031D44;
+    --name: #70A288;
+    --section: #D5896F;
+    --white: #DAB785;
+
+    --git: #e1d6d6;
+    --fb: #0866ff;
+    --gmail: #e34133;
+    --linkedin: #0a66c2;
+  }
+
+body {
+    height: 100vh;
+    background-color: var(--backg);
+    color: var(--white);
+    display: grid;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--name);
+}
+
+h2 {
+    color: var(--section);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.git a {
+    color: var(--git);
+}
+
+.fb a {
+    color: var(--fb);
+}
+
+.gmail a {
+    color: var(--gmail);
+}
+
+.linkedin a {
+    color: var(--linkedin);
+}
+
+canvas {
+    position: absolute;
+    z-index: -1;
+}
+
+ @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
